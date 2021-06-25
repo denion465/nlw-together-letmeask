@@ -66,5 +66,5 @@ export function NewRoom() {
         </div>
       </main>
     </div>
-  )
-}
+  );
+};

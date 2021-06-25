@@ -39,8 +39,13 @@ export function Home() {
       return;
     };
 
+    if (roomRef.val().closedAt) {
+      alert('Room already closed.');
+      return;
+    }
+
     history.push(`/rooms/${roomCode}`);
-  }
+  };
 
   return (
     <div id="page-auth">
@@ -74,5 +79,5 @@ export function Home() {
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
